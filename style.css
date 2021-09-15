@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    --primary-color:teal;
+    --secondary-color:white;
+    --tertiary-color: black;
+}
+
+.home{
+    background-image: url("jungle.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+}
+/*.sticky{
+    position: fixed;
+    background-color: var(--primary-color);
+    width: 100%;
+}*/
+
+.navbar a{
+    text-decoration: none;
+    flex-direction: row;
+    text-decoration: var(--secondary-color);
+    padding: 0.2rem 1.2rem 0.2rem 1.2rem; /*top right bottom left*/
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+.navbar a:hover{
+    background-color: var(--secondary-color);
+    border-radius: 5rem;
+    color: var(--primary-color);
+}
+
+.main{
+    background-color: var(--primary-color);
+}
+.main2{
+    position: absolute; /*These below four lines are important to bring text in the centre of the page*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.main2 p{
+    color: var(--secondary-color);
+    font-size: 5rem;
+    font-weight: bold; 
+}
+.book-btn{
+    position: absolute; /*These below four lines are important to bring text in the centre of the page*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 5rem;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 1.5rem 1rem 1.5rem; /*top right bottom left*/
+    border: none;
+}
+.book-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);  
+}
+.features{
+    margin-top: 2rem;
+    height: 100vh;
+}
+.features h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+.locations{
+    display: flex;
+    justify-content: center;
+}
+.locations h2{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.locations p{
+    text-align: justify;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem 1rem 1rem 1rem; /*top right bottom left*/
+}
+.card:last-child{
+    margin-right: 0rem;
+}
+.card{
+    width: 20vw;
+    height: 70vh;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
+}
+.card img{
+    width: 20vw;
+}
+.stars{
+    margin-left: 7rem;
+}
+.stars .fas{
+    color: rgb(248, 248, 6);
+    font-size: 2rem;
+    padding: 0.5rem 0 3rem 0;/*top right bottom left*/
+}
+
+.check{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+}
+.check a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+.check a:hover{
+    border-radius: 5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+.gallery{
+    height: 100vh;
+}
+.gallery h1{
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+}
+.images{
+    display: flex;
+    justify-content: center;
+}
+.images img{
+    height: 30vh;
+    cursor: pointer;
+}
+.images img:last-child{
+    margin-right: 0rem;
+}
+.images img{
+    margin-right: 7rem;
+    margin-bottom: 5rem;
+    box-shadow: 0.6rem 0.4rem 0.8rem black;
+}
+.section{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+.reviews{
+    background-color: var(--primary-color);
+    height: 100vh;
+
+}
+.reviews h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--secondary-color);
+    padding-top: 5rem;
+}
+.main-box:last-child{
+    margin-right: 0rem
+}
+.main-box{
+    height: 45vh;
+    width: 28vw;
+    background-color: var(--secondary-color);
+    text-align: center;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    box-shadow: 0.6rem 0.4rem 0.8rem var(--tertiary-color);
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+.dum-image img{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5rem;
+    margin-top: -4rem;
+}
+.box h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding: 1rem;
+}
+.box p{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: justify;
+    padding: 1rem; /*top right bottom left*/
+}
+.rating .fas{
+    color: yellow;
+    font-size: 1.5rem;
+}
+.clients img{
+    height: 10rem;
+}
+.clients h1{
+    margin-top: 2rem;
+}
+.contact{
+    height: 100vh;
+}
+.contact h1{
+    text-align: center;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+}
+.info-contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+}
+.info .fas{
+    color: var(--primary-color);
+    font-size: 2rem;
+    padding-right: 2rem;
+}
+.info{
+    margin-right: 30rem;
+}
+.info div{
+    padding-bottom: 1rem;
+}
+.info span{
+    color: var(--tertiary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+.info p{
+    color: var(--tertiary-color);
+    font-size: 1.5rem;
+}
+.info a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    font-size: 1.5rem;
+}
+
+input{
+    width: 21rem;
+    font-size: 1.5rem;
+    border-color: var(--primary-color);
+    margin-right: 1rem;
+}
+textarea{
+    font-size: 1.5rem;
+    border-color: var(--primary-color);
+    margin-top: 1rem;
+}
+
+.form button{
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+.form button:hover{
+    font-weight: bold;
+}
+
+
+
