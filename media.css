@@ -130,7 +130,7 @@
 }
 @media(max-width:400px){
     .images img{
-        height: 40vh;
+        height: 30vh;
         width: 90vw;
         margin-left: 1.5rem;
     }
