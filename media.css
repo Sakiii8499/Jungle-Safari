@@ -132,13 +132,13 @@
     .images img{
         height: 40vh;
         width: 90vw;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
     }
     .section{
-        margin-left: 1rem;
+        margin-left: 1.5rem;
     }
     .card{
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         width: 90vw;
     }
     .card img{
@@ -151,7 +151,7 @@
         width: 90vw;
     }
     .info-contact{
-        margin-left: 1rem;
+        margin-left: 1.5rem;
     }
     input{
         margin-bottom: 1rem;
