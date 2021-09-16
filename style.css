@@ -3,7 +3,7 @@
     font-family: 'Poppins', sans-serif;
     font-size: 62.5%;
     scroll-behavior: smooth;
-    --primary-color:teal;
+    --primary-color:#021c35;
     --secondary-color:white;
     --tertiary-color: black;
 }
@@ -15,11 +15,13 @@
     background-position: center;
 }
 
-ul{
+.sticky ul{
     list-style-type: none;
+    float: right;
+    padding-left: 15rem;
 }
 
-ul li{
+.navbar ul li{
     margin-top: 2rem;
     margin-bottom: 2rem;
     margin-right: 1rem;
@@ -28,13 +30,12 @@ ul li{
     display: grid;
     grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
 }
-/*.sticky{
+.sticky{
     position: fixed;
     background-color: var(--primary-color);
     width: 100%;
-}*/
-
-.navbar a{
+}
+.navbar li a {
     text-decoration: none;
     flex-direction: row;
     text-decoration: var(--secondary-color);
@@ -46,27 +47,56 @@ ul li{
     background-color: var(--secondary-color);
     border-radius: 5rem;
     color: var(--primary-color);
+    cursor: pointer;
 }
-
+.container{
+    background-color: #010f1d;
+    display: none;
+}
+.container ol{
+    list-style: none;
+    padding: 1rem;
+    text-align: center;
+}
+.container li{
+    margin: 1rem;
+}
+.na li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+.label .fas{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    cursor: pointer;
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    display: none;
+    position: relative;
+}
 .main{
     background-color: var(--primary-color);
 }
+.sticky span{
+    font-size: 3rem;
+    color: var(--secondary-color);
+    padding-left: 1rem;
+    font-weight: bold;
+}
 .main2{
-    position: absolute; /*These below four lines are important to bring text in the centre of the page*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: block;
+    text-align: center;
 }
 .main2 p{
+    padding-top: 25rem;
     color: var(--secondary-color);
     font-size: 5rem;
     font-weight: bold; 
 }
 .book-btn{
-    position: absolute; /*These below four lines are important to bring text in the centre of the page*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 100%);
+    position: relative; 
     color: var(--primary-color);
     background-color: var(--secondary-color);
     border-radius: 5rem;
@@ -81,7 +111,6 @@ ul li{
 }
 .features{
     margin-top: 2rem;
-    height: 100vh;
 }
 .features h1{
     text-align: center;
@@ -108,7 +137,6 @@ ul li{
 }
 .card{
     width: 20vw;
-    height: 70vh;
     margin-right: 5rem;
     margin-top: 5rem;
     box-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.3);
@@ -117,7 +145,7 @@ ul li{
     width: 20vw;
 }
 .stars{
-    margin-left: 7rem;
+    margin-left: 1rem;
 }
 .stars .fas{
     color: rgb(248, 248, 6);
@@ -142,9 +170,7 @@ ul li{
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
-.gallery{
-    height: 100vh;
-}
+
 .gallery h1{
     margin-top: 5rem;
     text-align: center;
@@ -175,25 +201,22 @@ ul li{
 }
 .reviews{
     background-color: var(--primary-color);
-    height: 100vh;
-
 }
 .reviews h1{
     text-align: center;
     font-size: 3.5rem;
     color: var(--secondary-color);
-    padding-top: 5rem;
 }
 .main-box:last-child{
     margin-right: 0rem
 }
 .main-box{
-    height: 45vh;
     width: 28vw;
     background-color: var(--secondary-color);
     text-align: center;
     margin-right: 4rem;
     margin-top: 3rem;
+    margin-bottom: 4rem;
     box-shadow: 0.6rem 0.4rem 0.8rem var(--tertiary-color);
     border-bottom-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -227,7 +250,7 @@ ul li{
     margin-top: 2rem;
 }
 .contact{
-    height: 100vh;
+    margin-bottom: 5rem;
 }
 .contact h1{
     text-align: center;
@@ -289,6 +312,5 @@ textarea{
 .form button:hover{
     font-weight: bold;
 }
-
 
 
