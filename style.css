@@ -34,6 +34,7 @@
     position: fixed;
     background-color: var(--primary-color);
     width: 100%;
+    padding-top: 1rem;
 }
 .navbar li a {
     text-decoration: none;
@@ -60,6 +61,12 @@
 }
 .container li{
     margin: 1rem;
+}
+.container li a:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 5rem;
+    padding: 0.5rem;
 }
 .na li a{
     text-decoration: none;

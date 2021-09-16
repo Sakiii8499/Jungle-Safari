@@ -24,11 +24,28 @@
         width: 40vw;
     }
     .images img{
-        margin-right: 3rem;
+        width: 60vh;
+        height: 40vh;
+        margin-left: 7rem;
+    }
+    .images{
+        display: flex;
+        flex-direction: column;
     }
     .sticky{
         position: unset;
     }
+    .section{
+        display: flex;
+       flex-direction: column;
+       margin-left: 15rem;
+    }
+    .main-box{
+        width: 70vw;
+     }
+     .section{
+         margin-left: 10rem;
+     }
     .sticky span{
         font-weight: normal;
     }
@@ -42,7 +59,7 @@
         display: block;
     }
     .main2 p{
-        padding-top: 10rem;
+        padding-top: 30rem;
     }
 }
 @media(max-width:700px){
@@ -53,10 +70,7 @@
         margin-left: 0rem;
 
     }
-    .images{
-        display: flex;
-        flex-direction: column;
-    }
+    
     .images img{
         margin-right: 0rem;
         width: 60vh;
@@ -70,11 +84,7 @@
     .card img{
         width: 50vw;
     }
-    .section{
-        display: flex;
-       flex-direction: column;
-       margin-left: 15rem;
-    }
+    
     .main-box{
         width: 60vw;
     }
@@ -97,15 +107,18 @@
     }
     .images img{
         height: 50vh;
-        width: 60vw;
-        margin-left: 12rem;
+        width: 80vw;
+        margin-left: 5rem;
     }
     .card{
-        width: 70vw;
-        margin-left: 10rem;
+        width: 80vw;
+        margin-left: 6rem;
     }
     .card img{
-        width: 70vw;
+        width: 80vw;
+    }
+    .main2 p{
+        padding-top: 30rem;
     }
 }
 @media(max-width:500px){
@@ -113,19 +126,31 @@
         margin-left: 2rem;
     }
     .main-box{
-       width: 80vw;
+       width: 90vw;
     }
     .section{
-        margin-left: 5rem;
+        margin-left: 1.5rem;
     }
     .images img{
-     margin-left: 8rem;
+     margin-left: 4rem;
+     height: 30vh;
+     width: 80vw;
     }
     .card{
-    margin-left: 5rem;
+        margin-left: 1.5rem;
+        width: 90vw;
+    }
+    .card img{
+        width: 90vw;
     }
     .main2 p{
         padding-top: 20rem;
+    }
+    textarea{
+        width: 90vw;
+    }
+    input{
+        margin-bottom: 1rem;
     }
 }
 @media(max-width:400px){
@@ -134,26 +159,7 @@
         width: 90vw;
         margin-left: 1.5rem;
     }
-    .section{
-        margin-left: 1.5rem;
-    }
-    .card{
-        margin-left: 1.5rem;
-        width: 90vw;
-    }
-    .card img{
-        width: 90vw;
-    }
-    .main-box{
-        width: 90vw;
-    }
-    textarea{
-        width: 90vw;
-    }
     .info-contact{
         margin-left: 1.5rem;
-    }
-    input{
-        margin-bottom: 1rem;
     }
 }
