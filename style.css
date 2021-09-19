@@ -31,10 +31,9 @@
     grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
 }
 .sticky{
-    position: fixed;
     background-color: var(--primary-color);
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 .navbar li a {
     text-decoration: none;
@@ -44,6 +43,7 @@
     font-size: 2rem;
     color: var(--secondary-color);
 }
+
 .navbar a:hover{
     background-color: var(--secondary-color);
     border-radius: 5rem;
